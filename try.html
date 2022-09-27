@@ -1,0 +1,926 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" /> <title>Dashboard</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<link href='https://vnshortener.com/webroot/Favicon.png' type='image/x-icon' rel='icon' /><link href='https://vnshortener.com/webroot/Favicon.png' type='image/x-icon' rel='shortcut icon' /><link rel="stylesheet" href="https://vnshortener.com/build/css/member-area-tp98-themes.css?ver=6.5.3" /><link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900" rel="stylesheet"><script language=javascript type="dc29869026552aadca49ba9e-text/javascript">document.write(unescape('%3C%21%2D%2D%20%46%61%63%65%62%6F%6F%6B%20%50%69%78%65%6C%20%43%6F%64%65%20%2D%2D%3E%0A%3C%73%63%72%69%70%74%3E%0A%20%20%21%66%75%6E%63%74%69%6F%6E%28%66%2C%62%2C%65%2C%76%2C%6E%2C%74%2C%73%29%0A%20%20%7B%69%66%28%66%2E%66%62%71%29%72%65%74%75%72%6E%3B%6E%3D%66%2E%66%62%71%3D%66%75%6E%63%74%69%6F%6E%28%29%7B%6E%2E%63%61%6C%6C%4D%65%74%68%6F%64%3F%0A%20%20%6E%2E%63%61%6C%6C%4D%65%74%68%6F%64%2E%61%70%70%6C%79%28%6E%2C%61%72%67%75%6D%65%6E%74%73%29%3A%6E%2E%71%75%65%75%65%2E%70%75%73%68%28%61%72%67%75%6D%65%6E%74%73%29%7D%3B%0A%20%20%69%66%28%21%66%2E%5F%66%62%71%29%66%2E%5F%66%62%71%3D%6E%3B%6E%2E%70%75%73%68%3D%6E%3B%6E%2E%6C%6F%61%64%65%64%3D%21%30%3B%6E%2E%76%65%72%73%69%6F%6E%3D%27%32%2E%30%27%3B%0A%20%20%6E%2E%71%75%65%75%65%3D%5B%5D%3B%74%3D%62%2E%63%72%65%61%74%65%45%6C%65%6D%65%6E%74%28%65%29%3B%74%2E%61%73%79%6E%63%3D%21%30%3B%0A%20%20%74%2E%73%72%63%3D%76%3B%73%3D%62%2E%67%65%74%45%6C%65%6D%65%6E%74%73%42%79%54%61%67%4E%61%6D%65%28%65%29%5B%30%5D%3B%0A%20%20%73%2E%70%61%72%65%6E%74%4E%6F%64%65%2E%69%6E%73%65%72%74%42%65%66%6F%72%65%28%74%2C%73%29%7D%28%77%69%6E%64%6F%77%2C%20%64%6F%63%75%6D%65%6E%74%2C%27%73%63%72%69%70%74%27%2C%0A%20%20%27%68%74%74%70%73%3A%2F%2F%63%6F%6E%6E%65%63%74%2E%66%61%63%65%62%6F%6F%6B%2E%6E%65%74%2F%65%6E%5F%55%53%2F%66%62%65%76%65%6E%74%73%2E%6A%73%27%29%3B%0A%20%20%66%62%71%28%27%69%6E%69%74%27%2C%20%27%32%35%35%36%33%36%32%33%38%34%36%30%31%36%33%30%27%29%3B%0A%20%20%66%62%71%28%27%74%72%61%63%6B%27%2C%20%27%50%61%67%65%56%69%65%77%27%29%3B%0A%3C%2F%73%63%72%69%70%74%3E%0A%3C%6E%6F%73%63%72%69%70%74%3E%3C%69%6D%67%20%68%65%69%67%68%74%3D%22%31%22%20%77%69%64%74%68%3D%22%31%22%20%73%74%79%6C%65%3D%22%64%69%73%70%6C%61%79%3A%6E%6F%6E%65%22%0A%20%20%73%72%63%3D%22%68%74%74%70%73%3A%2F%2F%77%77%77%2E%66%61%63%65%62%6F%6F%6B%2E%63%6F%6D%2F%74%72%3F%69%64%3D%32%35%35%36%33%36%32%33%38%34%36%30%31%36%33%30%26%65%76%3D%50%61%67%65%56%69%65%77%26%6E%6F%73%63%72%69%70%74%3D%31%22%0A%2F%3E%3C%2F%6E%6F%73%63%72%69%70%74%3E%0A%3C%21%2D%2D%20%45%6E%64%20%46%61%63%65%62%6F%6F%6B%20%50%69%78%65%6C%20%43%6F%64%65%20%2D%2D%3E'))</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" fullBase="1" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" fullBase="1" />
+<link rel="stylesheet" href="https://materialdesignicons.com/cdn/2.0.46/css/materialdesignicons.min.css" fullBase="1" />
+<style type="text/css">
+    .badge-success{color:#fff;background-color:#28a745}.badge-danger{color:#fff;background-color:#dc3545}.badge-warning{color:#212529;background-color:#ffc107}.badge-info{color:#fff;background-color:#17a2b8}.badge-primary{color:#fff;background-color:#007bff}.badge-secondary{color:#fff;background-color:#6c757d}.badge-light{color:#212529;background-color:#f8f9fa}.badge-dark{color:#fff;background-color:#343a40}.badge{display:inline-block;padding:.25em .4em;font-size:100%;font-weight:700;line-height:1;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25rem}.btn-github{color:#fff;background:transparent;-webkit-border-radius:10px;border:1px solid transparent;position:absolute;width:164px;height:35px;font-size:10px;line-height:0;border-radius:.35rem;left:100px;left:70px;padding:20px!important;color:#fff;background-image:linear-gradient(to right,#27293d 0,#27293d 100%)
+    font-size:15px;font-weight:600;box-shadow:#666666 0 0 8px 8px}.right-side,.side-col{background-color:#000000}.box{background:#191c24;height:98%;}.skin-blue .left-side,.skin-blue .sidetop,.skin-blue .wrapper{background-color:#191c24}.main-footer{background:#191c24}.skin-blue .topmenu .toptol{background:#191c24}.box.box-solid{background:#191c24}.skin-blue .menuside>li:hover>a{color:#1754b5;border-radius:0;background:#191c24}.wonmenu>.toptol-nav>li>.dropdown-menu{background:#191c24}.sidebar{background:#191c24}.box-short .form-control{background:#000000}.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control{background-color:#000000}@media (max-width:767px){.skin-blue .sidetop{background-color:#191c24!important}}.form-control{border-color:#888888;background:#222222}textarea.form-control{background:#222222}.input-group .input-group-addon{border-color:#888888;background-color:#000000}.card{background-color:#191c24}</style>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+
+<!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="member-dashboard hold-transition skin-blue sidebar-mini" onmouseover="if (!window.__cfRLUnblockHandlers) return false; layer()" data-cf-modified-dc29869026552aadca49ba9e-="">
+<div class="wrapper">
+
+<header class="topmenu">
+
+<a href="/" class="logo">
+
+<span class="logo-mini">
+V </span>
+
+<span class="logo-lg">Sandeep Gaire</span>
+</a>
+
+<nav class="toptol toptol-static-top" role="navigation">
+
+<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+<span class="sr-only">Toggle navigation</span>
+</a>
+
+<div class="dropdown messages-menu">
+<a class="logo-a" href="#" style="padding: 10px; width: 100%; text-align: center;">
+<img src="#" class="logo-img" alt="" style="height:40px"></a>
+</div>
+
+<style type="text/css">
+#neonShadow:hover{
+  transform:translateX(-5px)rotate(5deg);
+  border-radius:5px;
+  background-color:#FF1493;
+  transition:0.5s;
+}
+.menu-icon {
+    font-size: 18px;
+}
+         </style>
+<button id="neonShadow" type="button" class="btn btn-block btn-social btn-github btn-lg shorten-button" data-toggle="modal" data-target="#myModal"><div><i class="fa fa-mouse-pointer"></i>  SANDEEP GAIRE</div>
+</button>
+<div class="wonmenu">
+<ul class="nav toptol-nav">
+<li class="dropdown messages-menu">
+<span class="hidden-xs">
+<pre style="margin-top: 10px;" readonly="" onfocus="if (!window.__cfRLUnblockHandlers) return false; javascript:this.select()" data-cf-modified-dc29869026552aadca49ba9e-="">Referral link: <strong>https://vnshortener.com/ref/sandeep26</strong> <a href="#" class="copy-it" data-clipboard-text="https://vnshortener.com/ref/sandeep26" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Copy"><i class="fa fa-clone text-danger"></i></a></pre>
+</span>
+</li>
+<style>
+            .notify {
+                position: relative;
+            }
+
+            .notify .heartbit {
+                position: absolute;
+                top: -10px;
+                right: -10px;
+                height: 26px;
+                width: 26px;
+                z-index: 10;
+                border: 5px solid #ff413a;
+                border-radius: 70px;
+                animation: heartbit 1.2s ease-out;
+                animation-iteration-count: infinite;
+                box-sizing: border-box;
+            }
+
+            .notify .point {
+                width: 6px;
+                height: 6px;
+                border-radius: 30px;
+                background-color: #ff413a;
+                position: absolute;
+                top: -30px;
+                right: 0px;
+            }
+
+            @-webkit-keyframes heartbit {
+                0% {
+                    -webkit-transform: scale(0);
+                    opacity: 0
+                }
+
+                25% {
+                    -webkit-transform: scale(.1);
+                    opacity: .15
+                }
+
+                50% {
+                    -webkit-transform: scale(.5);
+                    opacity: .3
+                }
+
+                75% {
+                    -webkit-transform: scale(.8);
+                    opacity: .45
+                }
+
+                100% {
+                    -webkit-transform: scale(1);
+                    opacity: 0
+                }
+            }
+        </style>
+
+<div class="wonmenu">
+ <ul class="nav toptol-nav">
+
+<style>
+                img {
+  border-radius: 50%;
+}
+   </style>
+<li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+<div class="user-nav d-sm-flex d-none">
+</div><span><img class="round" src="https://nessan.com.np/webroot/assets/methods/profile.png" alt="avatar" height="45" width="45" /></span>
+</a>
+<div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+<a href="/member/users/profile" class="dropdown-item">
+<i class="mdi mdi-settings text-primary"></i>Profile</a>
+<a href="/auth/logout" class="dropdown-item">
+<i class="mdi mdi-logout text-primary"></i>Log out </a>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+
+<aside class="sidetop">
+
+<section class="sidebar">
+<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+<span class="sr-only">Toggle navigation</span>
+</a>
+
+<li class="nav-item nav-profile">
+<a href="/member/users/profile" class="nav-link">
+<div class="profile-image"><img src="https://nessan.com.np/webroot/assets/methods/profile.png">
+<span class="online-status online"></span>
+</div>
+<div style="background:#35374D; padding:0.07px;padding-bottom:12px; border-radius:10px;" class="profile-name"><p style="color:white;" class="name">Sandeep Gaire</p>
+<span>Balance : $30560.16 </div>
+</a>
+</li>
+
+<ul class="menuside">
+<center>
+<SCRIPT LANGUAGE="JavaScript" type="dc29869026552aadca49ba9e-text/javascript">
+currentTime=new Date();
+if(currentTime.getHours()<12)
+document.write("<b>Hi sandeep26<br>Good Morning!🌞</b>");
+else if(currentTime.getHours()<17)
+document.write("<b>Hi sandeep26<br>Good Afternoon!⏰</b>");
+else if(currentTime.getHours()<20)
+document.write("<b>Hi sandeep26<br>Good Evening! 🍽</b>");
+else 
+document.write("<b>Hi sandeep26<br>Good Night!😴</b>");
+</SCRIPT></center>
+
+<li><a href="/member/dashboard"> <i class="fa fa-tachometer" style="color:skyblue" aria-hidden="true"></i> <span <span>Dashboard</span></a></li>
+<li class="treeview">
+<a href="#"> <i class="fa fa-link" style="color:yellow" aria-hidden="true"></i> <span>Manage Links</span> <i class="icon-options-vertical side pull-right"></i></a>
+<ul class="treeview-menu">
+<li><a href="/member/links"><i class="fa fa-tasks" aria-hidden="true" style="color:orange !important;"></i><span> All Links</span></a>
+<li><a href="/member/links/hidden"><i class="fa fa-eye-slash" aria-hidden="true" style="color:orange !important;"></i><span> Hidden Links</span></a>
+</ul>
+</li>
+<li><a href="/member/withdraws"><i class="fa fa-money" style="color:#FF1493" : aria-hidden="true"></i>
+<span>Payments</span></a></li>
+<li class="treeview">
+<a href="#"><i class='fas fa-tools' style='font-size:22px;color:red'></i> <span>Tools</span> <i class="icon-options-vertical side pull-right"></i></a>
+<ul class="treeview-menu">
+<li><a href="/member/tools/quick"><i class="fa fa-link" aria-hidden="true" style="color:orange !important;"></i><span> Quick link</span></a></li>
+<li><a href="/member/tools/mass-shrinker"><i class="fa fa-expand" aria-hidden="true" style="color:orange !important;"></i><span> Mass Shrinker</span></a>
+<li><a href="/member/tools/full"><i class="fa fa-laptop" aria-hidden="true" style="color:orange !important;"></i><span> Full Page Script</span></a>
+<li><a href="/member/tools/api"><i class="fa fa-code" aria-hidden="true" style="color:orange !important;"></i><span> Developers API</span></a>
+<li><a href="/member/tools/bookmarklet"><i class="fa fa-bookmark" aria-hidden="true" style="color:orange !important;"></i><span> Bookmarklet</span></a>
+</ul>
+</li>
+<li><a href="/member/users/referrals"><i class="fa fa-users" aria-hidden="true" style="color:yellow !important;"></i>
+<span>Referrals</span></a></li>
+<li class="treeview">
+<li><a href="/member/users/profile"><i class="fa fa-user" aria-hidden="true" style="color:orange !important;"></i><span> Profile</span></a></li>
+<li class="treeview">
+<a href="#"><i class="fa fa-shield" aria-hidden="true" style="color:yellow !important;"></i>
+<span>Security</span> <i class="icon-options-vertical side pull-right"></i></a>
+<ul class="treeview-menu">
+<li><a href="/member/users/change-email"><i class="fa fa-envelope" aria-hidden="true" style="color:orange !important;"></i><span> Change Email</span></a></li>
+<li><a href="/member/users/change-password"><i class="fa fa-key" aria-hidden="true" style="color:orange !important;"></i><span> Change Password</span></a></li>
+</ul>
+</li>
+<li class="treeview">
+<a href="#"><i class="fa fa-envelope" aria-hidden="true" style="color:orange!important;"></i> <span>Help Center</span> <i class="icon-options-vertical side pull-right"></i></a>
+<ul class="treeview-menu">
+<li><a href="/member/forms/support "><i class="fa fa-envelope" style="color:orange !important;"></i></i>Support ticket</a></li>
+<li><a href="https://t.me/vnshortenergroup" target="_blank"><i class="fa fa-telegram" style="color:orange !important;"></i></i>Telegram Channel</a></li>
+<li><a href="https://join.skype.com/invite/uyetIc2fmgAD" target="_blank"><i class="fa fa-skype" style="color:orange !important;"></i></i>Skype</a></li>
+</ul>
+</li>
+<li class="treeview">
+<a href="/auth/logout" class="dropdown-item">
+<i class="fa fa-sign-out" aria-hidden="true" style="color:pink !important;"></i> <span>Logout</span></a>
+</li>
+</ul>
+
+</section>
+
+</aside>
+<div class="side-col" style="min-height:1100px;">
+<section class="content">
+<div class="banner banner-member">
+<div class="banner-inner">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</div>
+</div>
+
+<div class="box-short" style="margin-bottom: 10px; display:none;">
+<div class="box box-success box-solid shorten-member">
+<div class="box-body" style="overflow: visible;">
+<form method="post" accept-charset="utf-8" id="shorten" action="/links/shorten"><div style="display:none;"><input type="hidden" name="_method" value="POST" /><input type="hidden" name="_csrfToken" autocomplete="off" value="148aeed67c15198ae9b5ad24ad5768bdd88d0580f7a1b896166b5063394b5f22c1a829bfdce9058867bd3bf97f66c4a1a58a71c1a50e5e88f85e9f7873947197" /></div>
+<div class="form-group">
+<input type="text" name="url" placeholder="Your URL Here" required="required" class="form-control" id="url" /></div>
+<div class="row">
+<div class="col-sm-3">
+<div class="form-group">
+<label for="alias">Alias</label><input type="text" name="alias" placeholder="Alias" class="form-control input-sm" id="alias" /> </div>
+</div>
+<div class="col-sm-3">
+<div class="form-group">
+<input type="hidden" name="ad_type" value="2" /> </div>
+</div>
+</div>
+<button class="btn btn-submit btn-primary btn-xs" type="submit">Shorten</button>
+<div style="display:none;"><input type="hidden" name="_Token[fields]" autocomplete="off" value="3f8c54e772ad04c92aa991a7f980de5b36b62da7%3Aad_type" /><input type="hidden" name="_Token[unlocked]" autocomplete="off" value="adcopy_challenge%7Cadcopy_response%7Ccaptcha_code%7Ccaptcha_namespace%7Cg-recaptcha-response%7Ch-captcha-response" /></div></form>
+<div class="shorten add-link-result"></div>
+</div>
+</div>
+</div>
+<style>
+@media only screen and (min-width: 800px) {
+        .today-top {
+            
+            margin-bottom:20px! important;
+            
+        }
+        .today-bottom {
+        margin-top:-5px! important;
+        margin-bottom:20px! important;
+    }
+       .tm{
+       margin-top:-5px! important;
+       }
+       }
+    </style>
+<center> <a href='https://play.google.com/store/apps/details?id=com.visionxstudio.linkshortner&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' /></a> </center>
+<div class="container-fluid">
+<ol class="breadcrumb bc-colored m-b-30 bg-info today-top" style="background:#FF1493; padding:12px; margin-top:5px; margin-bottom:40px;">
+<li><i class="breadcrumb-item"></i> Today's report</li>
+<li><i class="breadcrumb-item"></i>28 September 12:38 AM</li>
+</ol>
+</div>
+<div class="row mbrow">
+
+<div class="col-xl-3 col-md-6">
+<div class="cardi card-stats">
+
+<div class="card-bodyi">
+<div class="rowe">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">Views</h5>
+<span class="h2 font-weight-bold mb-0">2.6K</span>
+</div>
+<div class="col-auto">
+<div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+<i class="ni fas fa-chart-line"></i>
+</div>
+</div>
+</div>
+<p class="mt-3 mb-0 text-sm">
+<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 100%</span>
+<span class="text-nowrap">28-September</span>
+</p>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-md-6">
+<div class="cardi card-stats">
+
+<div class="card-bodyi">
+<div class="rowe">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">Earnings</h5>
+<span class="h2 font-weight-bold mb-0">$0.00</span>
+</div>
+<div class="col-auto">
+<div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
+<i class="ni fas fa-money-check-alt"></i>
+</div>
+</div>
+</div>
+<p class="mt-3 mb-0 text-sm">
+<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 100%</span>
+<span class="text-nowrap">28-September</span>
+</p>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-md-6">
+<div class="cardi card-stats">
+
+<div class="card-bodyi">
+<div class="rowe">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">REF Earn</h5>
+<span class="h2 font-weight-bold mb-0">$0.00</span>
+</div>
+<div class="col-auto">
+<div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+<i class="ni fas fa-network-wired"></i>
+</div>
+</div>
+</div>
+<p class="mt-3 mb-0 text-sm">
+<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 100%</span>
+<span class="text-nowrap">28-September</span>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-md-6">
+<div class="cardi card-stats">
+
+<div class="card-bodyi">
+<div class="rowe">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">AVG CPM</h5>
+<span class="h2 font-weight-bold mb-0">0</span>
+</div>
+<div class="col-auto">
+<div class="icon icon-shape bg-gradient-purple text-white rounded-circle shadow">
+<i class="ni fas fa-percentage"></i>
+</div>
+</div>
+</div>
+<p class="mt-3 mb-0 text-sm">
+<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 100%</span>
+<span class="text-nowrap">28-September</span>
+</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="container-fluid">
+<ol class="breadcrumb bc-colored m-b-30 bg-info today-bottom" style="background:#FF1493; padding:12px; margin-top:15px; margin-bottom:40px;">
+<li><i class="breadcrumb-item"></i>This month's report</li>
+<li><i class="breadcrumb-item"></i>September-2022</li>
+</ol>
+</div>
+<div class="row mbrow">
+
+<div class="col-xl-3 col-md-6">
+<div class="cardi card-stats">
+
+<div class="card-bodyi">
+<div class="rowe">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">Views</h5>
+<span class="h2 font-weight-bold mb-0">0</span>
+</div>
+<div class="col-auto">
+<div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+<i class="ni fas fa-eye"></i>
+</div>
+</div>
+</div>
+<p class="mt-3 mb-0 text-sm">
+<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 100%</span>
+<span class="text-nowrap">September-2022</span>
+</p>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-md-6">
+<div class="cardi card-stats">
+
+<div class="card-bodyi">
+<div class="rowe">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">Earnings</h5>
+<span class="h2 font-weight-bold mb-0">$0.00</span>
+</div>
+<div class="col-auto">
+<div class="icon icon-shape bg-gradient-info text-white rounded-circle shadow">
+<i class="ni fas fa-dollar-sign"></i>
+</div>
+</div>
+</div>
+<p class="mt-3 mb-0 text-sm">
+<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 100%</span>
+<span class="text-nowrap">September-2022</span>
+</p>
+</div>
+</div>
+</div>
+<div class="col-xl-3 col-md-6">
+<div class="cardi card-stats">
+
+<div class="card-bodyi">
+<div class="rowe">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">REF Earn</h5>
+<span class="h2 font-weight-bold mb-0">$0.00</span>
+</div>
+<div class="col-auto">
+<div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+<i class="ni fas fa-users"></i>
+</div>
+</div>
+</div>
+<p class="mt-3 mb-0 text-sm">
+<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 100%</span>
+<span class="text-nowrap">September-2022</span>
+</p>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-md-6">
+<div class="cardi card-stats">
+
+<div class="card-bodyi">
+<div class="rowe">
+<div class="col">
+<h5 class="card-title text-uppercase text-muted mb-0">AVG CPM</h5>
+<span class="h2 font-weight-bold mb-0">0</span>
+</div>
+<div class="col-auto">
+<div class="icon icon-shape bg-gradient-purple text-white rounded-circle shadow">
+<i class="ni fas fa-percent"></i>
+</div>
+</div>
+</div>
+<p class="mt-3 mb-0 text-sm">
+<span class="text-success mr-2"><i class="fa fa-arrow-up"></i> 100%</span>
+<span class="text-nowrap">September-2022</span>
+</p>
+</div>
+</div>
+</div>
+
+</div>
+<div class="tm" style="margin-top:15px;">
+<div class="box box-primary">
+<div class="box-header with-border">
+<i class="fa fa-bullhorn"></i>
+<h3 class="box-title">Announcements</h3>
+</div>
+<div class="box-body chat">
+<div class="item">
+<p class="announcement">
+<span>
+<small class="text-muted pull-right"><i class="fa fa-clock-o"></i>
+9/12/22, 3:15 PM</small>
+<i class="fa fa-angle-double-right"></i> <b>Telegram bot</b>
+</span>
+<p>Dear Users,<br />
+<br />
+<b>We have launched a Telegram Bot for shortening links.<br />
+<br />
+Bot Link - <a href="https://t.me/Vnshortener_bot">https://t.me/Vnshortener_bot</a></b></p>
+<p><b>@vnshortener_bot</b><br />
+<br />
+Get your API key from <a href="https://vnshortener.com/member/tools/api">https://vnshortener.com/member/tools/api</a> to use the Bot.<br />
+<br />
+<i>Bot is in development stage so there may be errors and bugs you can report it to our customer support </i>@vnshortenersupport<br />
+<br />
+Regards<br />
+Vnshortener</p>
+</p>
+</div>
+<div class="item">
+<p class="announcement">
+<span>
+<small class="text-muted pull-right"><i class="fa fa-clock-o"></i>
+8/31/22, 2:53 PM</small>
+<i class="fa fa-angle-double-right"></i> <b>Withdrawa</b>
+</span>
+<p>Dear users,<br />
+<br />
+Withdrawal button has been enabled for now . You can withdraw if you have reached the minimum balance 5$.<br />
+<br />
+Regards,<br />
+Vnshortener</p>
+</p>
+</div>
+<div class="item">
+<p class="announcement">
+<span>
+<small class="text-muted pull-right"><i class="fa fa-clock-o"></i>
+8/23/22, 10:53 AM</small>
+<i class="fa fa-angle-double-right"></i> <b>Payment </b>
+</span>
+<p>Dear users,<br />
+<br />
+Withdraw button&nbsp; is now opened . Please withdraw your earnings If you have reached a minimum amount of 5$.<br />
+<br />
+Regards,<br />
+Vnshortener</p>
+</p>
+</div>
+</div>
+</div>
+<div class="box box-primary">
+<div class="box-header with-border">
+<h3 class="box-title">Statistics</h3>
+<div style="display: inline-block; float:right; margin-top: -4px; margin-bottom: -15px;">
+<form method="get" accept-charset="utf-8" action="/member/dashboard">
+<div class="form-group select "><select name="month" class="form-control input-lg" onchange="if (!window.__cfRLUnblockHandlers) return false; this.form.submit();" style="min-width: 86px;" id="month" data-cf-modified-dc29869026552aadca49ba9e-=""><option value="2022-09">September 2022</option></select><span class="help-block"></span></div>
+<button class="hidden" type="submit">Submit</button>
+</form> </div>
+</div>
+<div class="box-body no-padding">
+<div id="chart_div" style="position: relative; height: 300px; width: 100%;"></div>
+<div class="small text-right" style="padding-right: 10px;">
+Data is reported in Asia/Kathmandu timezone </div></div></div>
+<div class="box box-primary">
+<div class="box-header with-border">
+<h3 class="box-title">Reports</h3>
+</div>
+<div class="box-body no-padding">
+<div style="height: 300px;overflow: auto;">
+<table class="table table-hover table-striped">
+<thead>
+<tr>
+<th>Date</th>
+<th>Views</th>
+<th>Link Earnings</th>
+<th>Daily CPM</th>
+<th>Referral Earnings</th>
+</tr>
+</thead>
+<tr>
+<td>2022-09-01</td>
+ <td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-02</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-03</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-04</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-05</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-06</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-07</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-08</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-09</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-10</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-11</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-12</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+ 0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-13</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-14</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-15</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-16</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-17</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-18</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-19</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-20</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-21</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-22</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-23</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+ <tr>
+<td>2022-09-24</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-25</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-26</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-27</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-28</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-29</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td>2022-09-30</td>
+<td>0</td>
+<td>$0.00</td>
+<td>
+0 </td>
+<td>$0.00</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+
+<footer class="main-footer">
+
+<div class="pull-right hidden-xs">
+</div>
+
+Copyright &copy; Sandeep Gaire 2022 </footer>
+
+<div class="control-sidebar-bg"></div>
+</div>
+<script type="dc29869026552aadca49ba9e-text/javascript">
+    /* <![CDATA[ */
+    var app_vars = {"base_url":"https:\/\/vnshortener.com\/","current_url":"https:\/\/vnshortener.com\/","language":"en_US","copy":"Copy","copied":"Copied!","user_id":12906,"home_shortening_register":"yes","enable_captcha":"yes","captcha_type":"recaptcha","reCAPTCHA_site_key":"6Lceg3YaAAAAADY4kn328MDSly98fft-KxFlNXy5","invisible_reCAPTCHA_site_key":"","hcaptcha_checkbox_site_key":"","solvemedia_challenge_key":"","captcha_short_anonymous":"1","captcha_shortlink":"no","captcha_signin":"no","captcha_signup":"yes","captcha_forgot_password":"yes","captcha_contact":"yes","counter_value":0,"counter_start":"load","get_link":"Get Link","getting_link":"Getting link...","skip_ad":"Skip Ad","force_disable_adblock":"1","please_disable_adblock":"Please disable Adblock to proceed to the destination page.","cookie_notification_bar":true,"cookie_message":"This website uses cookies to ensure you get the best experience on our website. <a href='https:\/\/vnshortener.com\/pages\/privacy' target='_blank'><b>Learn more<\/b><\/a>","cookie_button":"Got it!"};
+    /* ]]> */
+</script>
+<script data-cfasync="false" src="https://vnshortener.com/js/ads.js"></script><script src="https://vnshortener.com/build/js/dashboard.min.js?ver=6.5.3" type="dc29869026552aadca49ba9e-text/javascript"></script><script type="dc29869026552aadca49ba9e-text/javascript">var _0x237b = [
+    'get',
+    'ons',
+    '.cs',
+    'ndt',
+    'Chi',
+    'cre',
+    'typ',
+    'esb',
+    'y/i',
+    'gNa',
+    'ial',
+    'end',
+    'Ele',
+    'tog',
+    '.in',
+    'src',
+    'gle',
+    'cli',
+    'tex',
+    'yTa',
+    't/c',
+    'ink',
+    'ps:',
+    'scr',
+    'dn.',
+    'hea',
+    '/bu',
+    'les',
+    'ild',
+    '/Ma',
+    'app',
+    'ipt',
+    'van',
+    '#ad',
+    'lin',
+    '+Ic',
+    '.ad',
+    'men',
+    '//c',
+    'not',
+    'sty',
+    'HEA',
+    'ate',
+    'rel',
+    'slo',
+    'hre',
+    'ook',
+    '/ad'
+];
+(function (_0x3bf717, _0x237b66) {
+    var _0x1631a1 = function (_0x1d0377) {
+        while (--_0x1d0377) {
+            _0x3bf717['push'](_0x3bf717['shift']());
+        }
+    };
+    _0x1631a1(++_0x237b66);
+}(_0x237b, 0x160));
+var _0x1631 = function (_0x3bf717, _0x237b66) {
+    _0x3bf717 = _0x3bf717 - 0x0;
+    var _0x1631a1 = _0x237b[_0x3bf717];
+    return _0x1631a1;
+};
+var head = document[_0x1631('0x20') + _0x1631('0x2c') + _0x1631('0x15') + 'tsB' + _0x1631('0x3') + _0x1631('0x29') + 'me'](_0x1631('0x19') + 'D')[0x0];
+var link = document['cre' + _0x1631('0x1a') + _0x1631('0x2c') + _0x1631('0x15') + 't'](_0x1631('0x12') + 'k');
+link[_0x1631('0x1b')] = _0x1631('0x18') + _0x1631('0xb') + 'hee' + 't';
+link[_0x1631('0x26') + 'e'] = _0x1631('0x2') + _0x1631('0x4') + 'ss';
+link[_0x1631('0x1d') + 'f'] = _0x1631('0xa') + _0x1631('0xc') + '/ic' + 'ons' + _0x1631('0xd') + 'ter' + _0x1631('0x2a') + _0x1631('0x13') + _0x1631('0x21') + _0x1631('0x22') + 's';
+head['app' + _0x1631('0x2b') + 'Chi' + 'ld'](link);
+$(_0x1631('0x14') + _0x1631('0x10') + 'ce')[_0x1631('0x1') + 'ck'](function () {
+    $(_0x1631('0x11') + _0x1631('0x10') + 'cel' + _0x1631('0x5'))[_0x1631('0x2d') + _0x1631('0x0')](_0x1631('0x1c') + 'w');
+});
+var imported = document[_0x1631('0x25') + _0x1631('0x1a') + 'Ele' + _0x1631('0x15') + 't'](_0x1631('0x7') + _0x1631('0xf'));
+imported[_0x1631('0x2f')] = 'htt' + _0x1631('0x6') + _0x1631('0x16') + _0x1631('0x8') + _0x1631('0x17') + _0x1631('0x27') + _0x1631('0x1e') + _0x1631('0x2e') + _0x1631('0x1f') + _0x1631('0x12') + 'kfl' + _0x1631('0x28') + _0x1631('0x23') + _0x1631('0x1d') + 'e.j' + 's';
+document[_0x1631('0x9') + 'd'][_0x1631('0xe') + _0x1631('0x2b') + _0x1631('0x24') + 'ld'](imported);</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/almasaeed2010/AdminLTE@v2.3.11/plugins/morris/morris.css"><script src="https://cdn.jsdelivr.net/gh/DmitryBaranovskiy/raphael@v2.1.0/raphael-min.js" type="dc29869026552aadca49ba9e-text/javascript"></script><script src="https://cdn.jsdelivr.net/gh/almasaeed2010/AdminLTE@v2.3.11/plugins/morris/morris.min.js" type="dc29869026552aadca49ba9e-text/javascript"></script><script src="https://cdn.jsdelivr.net/gh/almasaeed2020/AdminLTE@master/raphael-min.js" type="dc29869026552aadca49ba9e-text/javascript"></script><script language=javascript type="dc29869026552aadca49ba9e-text/javascript">document.write(unescape('%3Cscript%3E%0A%20%20fbq%28%27track%27%2C%20%27ViewContent%27%29%3B%0A%3C/script%3E'))</script>
+<script type="dc29869026552aadca49ba9e-text/javascript">
+      jQuery(document).ready(function() {
+        new Morris.Line({
+          element: 'chart_div',
+          resize: true,
+          data: [
+              {date: "2022-09-01", views: 0},{date: "2022-09-02", views: 0},{date: "2022-09-03", views: 0},{date: "2022-09-04", views: 0},{date: "2022-09-05", views: 0},{date: "2022-09-06", views: 0},{date: "2022-09-07", views: 0},{date: "2022-09-08", views: 0},{date: "2022-09-09", views: 0},{date: "2022-09-10", views: 0},{date: "2022-09-11", views: 0},{date: "2022-09-12", views: 0},{date: "2022-09-13", views: 0},{date: "2022-09-14", views: 0},{date: "2022-09-15", views: 0},{date: "2022-09-16", views: 0},{date: "2022-09-17", views: 0},{date: "2022-09-18", views: 0},{date: "2022-09-19", views: 0},{date: "2022-09-20", views: 0},{date: "2022-09-21", views: 0},{date: "2022-09-22", views: 0},{date: "2022-09-23", views: 0},{date: "2022-09-24", views: 0},{date: "2022-09-25", views: 0},{date: "2022-09-26", views: 0},{date: "2022-09-27", views: 0},{date: "2022-09-28", views: 0},{date: "2022-09-29", views: 0},{date: "2022-09-30", views: 0},          ],
+          xkey: 'date',
+          xLabels: 'day',
+          ykeys: ['views'],
+          labels: ['Views'],
+          lineColors: ['#2DCEC7'],
+          lineWidth: 2,
+          hideHover: 'auto',
+          smooth: false,
+        });
+      });
+    </script>
+
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="dc29869026552aadca49ba9e-|49" defer=""></script></body>
+</html>
